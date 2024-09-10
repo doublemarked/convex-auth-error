@@ -1,0 +1,33 @@
+{
+	"name": "convex-auth-error",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "npm-run-all --parallel dev:frontend dev:backend",
+		"dev:frontend": "next dev",
+		"dev:backend": "convex dev --tail-logs",
+		"check-types": "tsc --noEmit",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@auth/core": "^0.34.2",
+		"@convex-dev/auth": "^0.0.65",
+		"class-variance-authority": "^0.7.0",
+		"convex": "^1.15.0",
+		"convex-helpers": "^0.1.56",
+		"next": "14.2.9",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@edge-runtime/vm": "^4.0.3",
+		"@types/node": "^20.16.5",
+		"@types/react": "^18.3.5",
+		"@types/react-dom": "^18.3.0",
+		"dotenv": "^16.4.5",
+		"npm-run-all": "^4.1.5",
+		"typescript": "^5.5.4"
+	},
+	"packageManager": "pnpm@9.7.0+sha256.b35018fbfa8f583668b2649e407922a721355cd81f61beeb4ac1d4258e585559"
+}
